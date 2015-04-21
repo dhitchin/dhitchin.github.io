@@ -13,7 +13,7 @@ html { height: 100%; font-size: 62.5% }
 
 body {
 height: 100%;
-background-color: #10578D;
+background-color: #FCEBB8;
 text-align: center;
 font: 1.2em Verdana, Arial, Helvetica, sans-serif;
 }
@@ -75,20 +75,13 @@ text-align: left;
 background-color: #282828;
 letter-spacing: 1px;
 width: 39em;
+margin: 0 0 0 7em;
+border-radius: 20px;
 }
-
-.title-top { background: url('.img/title-top.gif') repeat-x 0 0; }
-.title-left { background: url('.img/title-left.gif') repeat-y 0 0 }
-.title-right { background: url('.img/title-right.gif') repeat-y 100% 0 }
-.title-bottom { background: url('.img/title-bottom.gif') repeat-x 0 100% }
-.title-top-left { background: url('.img/title-top-left.gif') no-repeat 0 0; }
-.title-top-right { background: url('.img/title-top-right.gif') no-repeat 100% 0; }
-.title-bottom-left { background: url('.img/title-bottom-left.gif') no-repeat 0 100%; }
-.title-bottom-right { background: url('.img/title-bottom-right.gif') no-repeat 100% 100%; }
 
 .title p {
 color: #FFFFFF;
-margin: 4px 0 0 21px;
+margin: 5 5 5 21px;
 padding-bottom: 12px;
 }
 
@@ -120,29 +113,35 @@ margin-bottom: 7px;
 
 
 /* Menu */
+menu{
+
+width: 200px;
+}
 
 ul.menu {
+background-color: #78C0A8;
+margin: 0;
+padding: 0;
 list-style-type: none;
+display: block;
+line-height: 150%;
 }
 
 ul.menu li {
-background: url('.img/menu-li-divider.gif') no-repeat 50% 100%;
-padding: 18px 0;
+padding: 5px;
+border-top: 1px solid #FFFFFF;
+border-bottom: 1px solid #999999;
 }
 
 ul.menu li a, ul.menu li a:visited {
+display: block;
 color: #FFFFFF;
 font-weight: normal;
 text-decoration: none;
-padding: 4px 7px;
 }
 
 ul.menu li a:hover, ul.menu li a.active {
 background-color: #002F53;
-}
-
-ul.menu li.last {
-background: none;
 }
 
 
@@ -158,6 +157,8 @@ float: left;
 width: 165px;
 text-align: center;
 color: #FFFFFF;
+background-color: #78C0A8;
+border-radius: 10px;
 }
 
 .column-left h3 {
@@ -171,30 +172,16 @@ margin: 0 0 0 191px;
 width: 650px;
 }
 
-.box-top {
-background: url('.img/box-top.gif') no-repeat 0 0;
-height: 12px;
-}
-
 .box {
-background: url('.img/box-bg.gif') repeat-y 0 0;
-}
-
-.box-in {
 background-color: #FFFFFF;
 padding: 0.8em 0 5em 0;
 margin: 0 6em 0 2em;
 }
 
-.box-in p {
+.box p {
 line-height: 1.6;
 margin: 0 0 10px 25px;
 color: #242424;
-}
-
-.box-bottom {
-background: url('.img/box-bottom.gif') no-repeat 0 100%;
-height: 48px;
 }
 
 ul.main-list {
