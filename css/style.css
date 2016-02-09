@@ -1,225 +1,190 @@
-/*  This template was created by Mantis-a [http://www.mantisa.cz/]. For more templates visit Free website templates [http://www.mantisatemplates.com/]. */
-
-
-
-/* CSS Document */
-
-
-/* General */
-
-* { margin: 0; padding: 0; }
-
-html { height: 100%; font-size: 62.5% }
-
-body {
-height: 100%;
-background-color: #FCEBB8;
-text-align: center;
-font: 1.2em Verdana, Arial, Helvetica, sans-serif;
+html
+{
+	overflow: auto;
 }
 
-a:link, a:visited {
-color: #004F8B;
-text-decoration: underline;
-font-weight: bolder;
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #2E2E2E url('../images/background.jpg');
+	font-size: 70%;
+	font-family: verdana;
+	color: #DDD;
 }
 
-a:hover {
-text-decoration: none;
+#centrecontainer
+{
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 100%;
 }
 
-.noscreen {
-display: none;
+#outercontainer
+{
+	margin-left: -450px;
+	position: absolute;
+	top: -250px;
+	left: 50%;
 }
 
-
-/* Cleaner */
-
-.cleaner {
-clear: both;
-height: 0;
-font-size: 0;
-visibility: hidden;
+#container    
+{
+	width: 900px;
+	height: 500px;
+	background: #444;
 }
 
-
-/* Skip menu */
-
-.hidden {
-position: absolute;
-top: -10000px;
-left: 0;
-width: 1px;
-height: 1px;
-overflow: hidden;
+#headercont
+{
+	width: 870px;
+	height: 50px;
+	background: #9C0 url('../images/headercont-background.jpg') repeat-x;
+	letter-spacing: -1px;
+	color: #FFF;
+	padding: 0 15px;
 }
 
-
-/* Images */
-
-
-
-/* Wrapper */
-
-#wrapper {
-width: 850px;
-margin: 60px auto 0 auto;
-padding-bottom: 90px;
-text-align: left;
+#headercont ul, #footercont ul
+{
+	margin: 0;
+	padding: 18px 0 0 0;
+	list-style-type: none;
+	text-align: right;
 }
 
-
-/* Headings, paragraphs */
-
-.title {
-background-color: #282828;
-letter-spacing: 1px;
-width: 39em;
-margin: 0 0 0 7em;
-border-radius: 20px;
+#headercont ul li, #footercont ul li
+{
+	display: inline;
+	margin: 0 0 0 10px;
 }
 
-.title p {
-color: #FFFFFF;
-margin: 5 5 5 21px;
-padding-bottom: 12px;
+#headercont ul li a, #footercont ul li a
+{
+	color: #E8FF9F;
+	text-decoration: none;
 }
 
-h1 {
-font: normal 2.4em Georgia, "Times New Roman", Times, serif;
-color: #FFFFFF;
-padding-top: 25px;
-margin-left: 20px;
+#headercont ul li a:hover, #footercont ul li a:hover
+{
+	color: #FFF;
+	text-decoration: none;
 }
 
-h1 a:link, h1 a:visited {
-color: #FFFFFF;
-text-decoration: none;
-font-weight: normal;
+#maincont
+{
+	width: 900px;
+	height: 325px;
+	background: #444;
 }
 
-h1 span {
-color: #FFB849;
+#mainleft
+{
+	float: left;
+	width: 420px;
+	height: 295px;
+	padding: 15px;
+	background: #333;
 }
 
-h2 {
-font: normal 1.5em Georgia, "Times New Roman", Times, serif;
-color: #004F8B;
-letter-spacing: 1px;
-background: url('.img/h2-bg.gif') no-repeat 0 53%;
-padding-left: 25px;
-margin-bottom: 7px;
+#mainleft h1
+{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-family: arial;
+	font-size: 300%;
+	letter-spacing: -2px;
+	color: #AAA;
 }
 
-
-/* Menu */
-menu{
-
-width: 200px;
+#mainleft h1 span
+{
+	color: #9C0;
 }
 
-ul.menu {
-background-color: #78C0A8;
-margin: 0;
-padding: 0;
-list-style-type: none;
-display: block;
-line-height: 150%;
+#mainright
+{
+	float: left;
+	width: 420px;
+	height: 310px;
+	padding: 15px 15px 0 15px;
+	overflow: auto;
+	line-height: 150%;
 }
 
-ul.menu li {
-padding: 5px;
-border-top: 1px solid #FFFFFF;
-border-bottom: 1px solid #999999;
+#mainright p
+{
+	margin: 0 0 15px 0;
+	padding: 0;
 }
 
-ul.menu li a, ul.menu li a:visited {
-display: block;
-color: #FFFFFF;
-font-weight: normal;
-text-decoration: none;
+#mainright h1, h2, h3
+{
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 0;
+	font-size: 180%;
+	letter-spacing: -1px;
+	font-weight: normal;
+	font-family: arial, verdana;
+	border-bottom: 1px solid #777;
 }
 
-ul.menu li a:hover, ul.menu li a.active {
-background-color: #002F53;
+#menucont
+{
+	width: 900px;
+	height: 75px;
+	background: #8FBF00;
+	border-bottom: 1px solid #A6DD00;
 }
 
-
-/* Content box */
-
-.content {
-width: 850px;
-margin: 19px auto 0 auto;
+#menucont ul
+{
+	margin: 0;
+	padding: 19px 0 0 22px;
+	list-style-type: none;
 }
 
-.column-left {
-float: left;
-width: 165px;
-text-align: center;
-color: #FFFFFF;
-background-color: #78C0A8;
-border-radius: 10px;
+#menucont ul li
+{
+	display: inline;
 }
 
-.column-left h3 {
-font: normal 1.5em Georgia, "Times New Roman", Times, serif;
-margin: 10px 0 7px 0;
-letter-spacing: 1px;
+#menucont ul li a
+{
+	float: left;
+	padding: 10px 15px;
+	margin: 0 10px 0 0;
+	background: #8FBF00;
+	color: #E7FF9B;
+	border: 2px solid #8FBF00;
+	text-decoration: none;
 }
 
-.column-right {
-margin: 0 0 0 191px;
-width: 650px;
+#menucont ul li a.active
+{
+	color: #FFF;
+	text-decoration: none;
+	border: 2px solid #7EA800;
+	background: #8FBF00;
 }
 
-.box {
-background-color: #FFFFFF;
-padding: 0.8em 0 5em 0;
-margin: 0 6em 0 2em;
+#menucont ul li a:hover
+{
+	background: #83AE00;
+	color: #FFF;
+	text-decoration: none;
+	border: 2px solid #A6DD00;
 }
 
-.box p {
-line-height: 1.6;
-margin: 0 0 10px 25px;
-color: #242424;
+#footercont
+{
+	width: 870px;
+	height: 48px;
+	background: #9C0 url('../images/headercont-background.jpg') repeat-x;
+	color: #E8FF9F;
+	border-top: 1px solid #7EA800;
+	letter-spacing: -1px;
+	padding: 0 15px;
 }
-
-ul.main-list {
-list-style-type: none;
-margin: 14px 0 20px 25px;
-}
-
-ul.main-list li {
-line-height: 1.3;
-margin-bottom: 12px;
-color: #004F8B;
-background: url('.img/bullet.gif') no-repeat 0 0;
-padding-left: 27px;
-}
-
-
-/* Footer */
-
-.footer-info-left, .footer-info-right {
-font-size: 0.8em;
-color: #626262;
-position: relative;
-top: -7px;
-display: inline;
-}
-
-.footer-info-left {
-float: left;
-margin-left: 17px;
-}
-
-.footer-info-right {
-float: right;
-margin-right: 40px;
-}
-
-.footer-info-left a, .footer-info-left a:visited, .footer-info-right a, .footer-info-right a:visited {
-font-weight: normal;
-color: #626262;
-}
-
